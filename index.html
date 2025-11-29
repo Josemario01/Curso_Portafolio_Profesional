@@ -23,12 +23,12 @@
         </div>
 
         <nav class="nav">
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#skills">Skills</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#inicio" data-i18n="nav.home">Inicio</a>
+            <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+            <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+            <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#contacto" data-i18n="nav.contact">Contacto</a>
         </nav>
 
         <div class="lang-switcher">
@@ -37,34 +37,41 @@
         </div>
     </header>
 
+
     <main>
 
         <!-- INICIO / HERO -->
         <section id="inicio" class="section hero">
             <div class="hero-content">
-                <h1 class="hero-title">José Mario Salazar</h1>
-                <p class="hero-tagline">Desarrollador de Software · Cloud Enthusiast</p>
-                <h2 class="hero-subtitle">Construyendo soluciones modernas, escalables y orientadas al usuario.</h2>
+                <h1 class="hero-title" data-i18n="hero.name">José Mario Salazar</h1>
+                <p class="hero-tagline" data-i18n="hero.tagline">
+                    Desarrollador de Software · Cloud Enthusiast
+                </p>
+                <h2 class="hero-subtitle" data-i18n="hero.subtitle">
+                    Construyendo soluciones modernas, escalables y orientadas al usuario.
+                </h2>
 
-                <p class="hero-text">
-
+                <p class="hero-text" data-i18n="hero.text">
+                    Desarrollador de Software con experiencia en proyectos que integran front-end y back-end, metodologías ágiles y gestión de tareas en Azure DevOps. Cuento con bases sólidas en programación, manejo de bases de datos y resolución de problemas técnicos. Me
+                    interesa seguir creciendo en arquitecturas modernas y computación en la nube.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="assets/CV_ES.pdf" class="btn primary">
-            Descargar CV (ES)
-          </a>
-                    <a href="assets/CV_EN.pdf" class="btn outline">
-            Download CV (EN)
-          </a>
+                    <a href="assets/CV_ES.pdf" class="btn primary" data-i18n="hero.cv_es">
+        Descargar CV (ES)
+      </a>
+                    <a href="assets/CV_EN.pdf" class="btn outline" data-i18n="hero.cv_en">
+        Download CV (EN)
+      </a>
                 </div>
             </div>
         </section>
 
+
         <!-- SOBRE MÍ -->
         <section id="sobre-mi" class="section">
-            <h2 class="section-title">Sobre mí</h2>
-            <p class="section-text">
+            <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
+            <p class="section-text" data-i18n="about.text">
                 Desarrollador de Software con experiencia en proyectos que integran front-end y back-end, metodologías ágiles y gestión de tareas en Azure DevOps. Cuento con bases sólidas en programación, manejo de bases de datos, diseño de funcionalidades y resolución
                 de problemas técnicos. Además, poseo experiencia en soporte TI, configuración de software, gestión de incidentes y organización de recursos tecnológicos. Me interesa continuar fortaleciendo mis habilidades técnicas en desarrollo, arquitecturas
                 modernas y computación en la nube, aportando valor a equipos de TI a través de soluciones eficientes, escalables y orientadas al usuario.
@@ -79,7 +86,7 @@
 
         <!-- EXPERIENCIA -->
         <section id="experiencia" class="section section-alt">
-            <h2 class="section-title">Experiencia</h2>
+            <h2 class="section-title" data-i18n="experience.title">Experiencia</h2>
 
             <div class="timeline">
 
@@ -133,8 +140,8 @@
 
         <!-- PROYECTOS -->
         <section id="proyectos" class="section">
-            <h2 class="section-title">Proyectos</h2>
-            <p class="section-text">
+            <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
+            <p class="section-text" data-i18n="projects.text">
                 Algunos de los proyectos en los que he trabajado, integrando desarrollo front-end, back-end y buenas prácticas de colaboración.
             </p>
 
@@ -181,7 +188,7 @@
 
         <!-- SKILLS -->
         <section id="skills" class="section section-alt">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title" data-i18n="skills.title">Skills</h2>
 
             <div class="skills-wrapper">
 
@@ -223,8 +230,8 @@
 
         <!-- CONTACTO -->
         <section id="contacto" class="section">
-            <h2 class="section-title">Contacto</h2>
-            <p class="section-text">
+            <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+            <p class="section-text" data-i18n="contact.text">
                 Si deseas contactarme por oportunidades laborales, proyectos o networking, puedes escribirme directamente a mi correo, conectar en LinkedIn o enviarme un mensaje mediante el siguiente formulario.
             </p>
 
@@ -235,28 +242,28 @@
                     <div class="contact-icon">
                         <img src="assets/file.svg" alt="Formulario de contacto" />
                     </div>
-                    <h3>Formulario de contacto</h3>
-                    <p class="contact-text">
+                    <h3 data-i18n="contact.form.title">Formulario de contacto</h3>
+                    <p class="contact-text" data-i18n="contact.form.text">
                         Completa el formulario y simularé el envío de tu mensaje utilizando JavaScript y una librería web para mostrar la confirmación.
                     </p>
 
                     <form id="contact-form" class="contact-form">
                         <div class="form-group">
-                            <label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+                            <label for="name" data-i18n="contact.form.name.label">Nombre completo</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required data-i18n-placeholder="contact.form.name.placeholder" />
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+                            <label for="email" data-i18n="contact.form.email.label">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required data-i18n-placeholder="contact.form.email.placeholder" />
                         </div>
 
                         <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            <label for="message" data-i18n="contact.form.message.label">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required data-i18n-placeholder="contact.form.message.placeholder"></textarea>
                         </div>
 
-                        <button type="submit" class="btn primary btn-submit">
+                        <button type="submit" class="btn primary btn-submit" data-i18n="contact.form.button">
           Enviar mensaje
         </button>
                     </form>
@@ -267,27 +274,27 @@
                     <div class="contact-icon">
                         <img src="assets/email.svg" alt="Otros medios de contacto" />
                     </div>
-                    <h3>Otros medios de contacto</h3>
-                    <p class="contact-text">
+                    <h3 data-i18n="contact.other.title">Otros medios de contacto</h3>
+                    <p class="contact-text" data-i18n="contact.other.text">
                         También puedes contactar conmigo directamente por correo, WhatsApp o conectar en LinkedIn y GitHub para coordinar entrevistas o compartir información.
                     </p>
 
-                    <p><strong>Teléfono / WhatsApp:</strong><br> +506 8339 7998
+                    <p><strong data-i18n="contact.other.phone.label">Teléfono / WhatsApp:</strong><br> +506 8339 7998
                     </p>
 
-                    <p><strong>Email:</strong><br>
+                    <p><strong data-i18n="contact.other.email.label">Email:</strong><br>
                         <a class="contact-link" href="mailto:josemario.sm01@gmail.com">
           josemario.sm01@gmail.com
         </a>
                     </p>
 
-                    <p><strong>LinkedIn:</strong><br>
+                    <p><strong data-i18n="contact.other.linkedin.label">LinkedIn:</strong><br>
                         <a class="contact-link" href="https://www.linkedin.com/in/jose-mario-salazar-4052a3267/" target="_blank">
           linkedin.com/in/jose-mario-salazar-4052a3267
         </a>
                     </p>
 
-                    <p><strong>GitHub:</strong><br>
+                    <p><strong data-i18n="contact.other.github.label">GitHub:</strong><br>
                         <a class="contact-link" href="https://github.com/Josemario01" target="_blank">
           github.com/TU_USUARIO_GITHUB
         </a>
